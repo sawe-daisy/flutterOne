@@ -10,10 +10,12 @@ class _HomeState extends State<Home>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('Home screen',
-      style: TextStyle(
-        color: Colors.amber,
-        fontSize: 20.0,
+      body: SafeArea(
+              child: Text('Home screen',
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 50.0,
+          ),
         ),
       ),
       backgroundColor: Colors.redAccent,
