@@ -15,7 +15,7 @@ class _HomeState extends State<Home>{
           children: [
             FlatButton.icon(
               onPressed: () {
-                Navigator.pushNamed(context,'/location');
+                Navigator.pushNamed(context,'/loading');
               },
               icon: Icon(Icons.edit_location),
               label: Text('Edit'),

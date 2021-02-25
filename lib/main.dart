@@ -5,7 +5,7 @@ import 'package:appTwo/pages/location.dart';
 void main() => runApp(MaterialApp(
   initialRoute: '/home',
   routes: {
-    '/': (context) => LoadingState(),
+    '/loading': (context) => LoadingState(),
     '/home': (context) => Home(),
     '/location': (context) => ChooseLocation()
   },
