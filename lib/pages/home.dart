@@ -11,12 +11,17 @@ class _HomeState extends State<Home>{
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-              child: Text('Home screen',
-        style: TextStyle(
-          color: Colors.black,
-          fontSize: 50.0,
+        child: Column(
+          children: [
+            FlatButton.icon(
+              onPressed: () {
+                Navigator.pushNamed(context,'/location');
+              },
+              icon: Icon(Icons.edit_location),
+              label: Text('Edit'),
+              )
+          ],
           ),
-        ),
       ),
       backgroundColor: Colors.redAccent,
     );
