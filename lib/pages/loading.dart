@@ -16,14 +16,12 @@ class _LoadingStateState extends State<LoadingState> {
     // Map data = jsonDecode(response.body);
     // print(data['userId']);
 
-    Response response= await get('http://worldtimeapi.org/timezone/Africa/Nairobi');
-    // Response response= await get('https://jsonplaceholder.typicode.com/todos/1');
+    //Response response= await get('http://worldtimeapi.org/timezone/Africa/Nairobi/');
+    Response response= await get('https://jsonplaceholder.typicode.com/todos/1');
     Map data = jsonDecode(response.body.toString());
     print(data);
     
   }
-
-  int number=0;
   @override
   void initState() {
     super.initState();
